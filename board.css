@@ -1,0 +1,81 @@
+body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    /* font-family and text-align properties stayed as is when I deleted them from the body tag, so I wrote them in some selectors below. But, I kept it in the body tag just in case */
+}
+
+h1 {
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 35px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    color: rgb(7, 163, 7);
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 25px;
+    margin: px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    
+.flex-container {
+    display: flex;
+    /* justify-content = horizontally; align-items = vertically */
+    justify-content: center;
+    align-items: center;
+    
+}
+    
+.flex-column {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(64, 64, 255);
+}
+    
+.flex-wrap {
+    flex-wrap: wrap;
+    height: 432px;
+    width: 432px;
+}
+
+.square {
+    border: 2px solid black;
+    height: 140px;
+    width: 140px;
+}
+    
+#restart-button {
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+    height: 55px;
+    width: 90px;
+    margin: 40px;
+    border-radius: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* ALL BELOW: removes borders on of board to make it look like a regular tic-tac-toe board:  */
+
+.square:nth-child(1), .square:nth-child(2), .square:nth-child(3) {
+	border-top: none;
+}
+
+.square:nth-child(1), .square:nth-child(4), .square:nth-child(7) {
+	border-left: none;
+}
+
+.square:nth-child(3), .square:nth-child(6), .square:nth-child(9) {
+	border-right: none;
+}
+
+.square:nth-child(7), .square:nth-child(8), .square:nth-child(9) {
+	border-bottom: none;
+}

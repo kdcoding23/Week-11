@@ -1,4 +1,4 @@
-<a href="https://kdcoding23.github.io/Week-11/">Github Page</a>
+<a href="https://kdcoding23.github.io/Week-11/board">Github Page</a>
 
 Promineo Tech's Week 11 assignment was to make a Tic-Tac-Toe game with these criteria:
 
